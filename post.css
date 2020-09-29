@@ -1,0 +1,320 @@
+
+    .container {
+    display: grid;
+    background-color: #FDFEFE;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: minmax(250px, auto);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-areas: 
+    "hd"
+    "post"
+    "sd"
+    "ft";
+    }
+        
+    /* Header*/
+
+    .header { 
+    grid-area: hd;
+    margin-right: -180px;
+    }
+
+
+    .blogname {
+    display: flex;
+    justify-content: center;
+    font-family: 'snell roundhand';
+    }
+
+    .nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+     text-align: center;
+    }
+
+    .nav li {
+    display: inline-block;
+    }
+
+    .nav a {
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    display:block;
+    width: 50px;
+    height: 30px;
+    font-family: 'garamond';
+    }
+
+    .nav a:hover {
+    background: white;
+    color:grey;
+    transition:0.4s;
+    }
+
+    /* Post*/
+
+    .post{ 
+    grid-area: post;
+    }
+
+    .post1name {
+    font-family: 'raleway';
+    font-weight: 100;
+    
+    }
+    
+    .par {
+    text-indent: 20px;
+    font-family: 'raleway';
+    }
+    
+    .date {
+    font-size: 13px;
+    font-weight: 10;
+
+    }
+
+    /*sidebar*/
+    .sidebar { 
+    grid-area: sd;
+
+    }
+
+    .shanepic{
+    margin-left:120px;
+    }
+    .abouttitle {
+    display: flex;
+    justify-content: center;
+    font-family: 'raleway';
+    font-weight: 100;
+    }
+
+    .aboutpar {
+    text-align: center;
+    font-family: 'raleway';
+    }
+    /*footer*/
+
+    .footer { 
+    grid-area: ft;
+    
+    }
+
+    .socialicon ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 0px;
+    }
+
+    .socialicon li{
+    display: inline-block;
+    }
+
+    .subtitle{
+    display: flex;
+    justify-content: center;
+    font-family: 'raleway';
+    color: red;
+    }
+    
+    .subinput{
+    margin-left: 165px;
+    margin-bottom: 10px;
+    }
+
+    .subemail{
+    display: flex;
+    justify-content: center;
+    }
+
+    @media(min-width:900px){
+    .container {
+    display: grid;
+    background-color: #FDFEFE;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: minmax(50px, auto);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    }
+        }    
+
+    /* Header*/
+
+    .header { 
+    grid-area: 1 / 1 / 5 / 13;
+    padding: 0px;
+    margin: 0px;
+    }
+
+
+    .blogname {
+    display: flex;
+    justify-content: center;
+    font-family: 'snell roundhand';
+    font-size: 50px;
+    font-weight: 100;
+    margin-bottom: 50px;
+    }
+
+    .nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+     text-align: center;
+    }
+    .nav li {
+    display: inline-block;
+    }
+    .nav a {
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    display:block;
+    width: 50px;
+    height: 30px;
+    font-family: 'garamond';
+    }
+
+    .nav a:hover {
+    background: white;
+    color:grey;
+    transition:0.4s;
+    }
+
+    /* Post*/
+
+    .post{ 
+    grid-area: 5 / 2 / 19 / 9;
+    display: flex;
+    flex-direction: column;
+    grid-template-rows: 1fr, 3fr;
+    font-family: 'raleway';
+    font-weight: 100;
+    margin-left: 100px;
+    margin-right: 400px;   
+    }
+
+    .post1name {
+    font-weight: 100;
+    text-decoration: none;
+    font-size: 35px;
+    font-style: normal;
+    text-transform: none;
+    letter-spacing: 6px;
+    font-family: 'raleway';
+    margin-bottom: 15px;
+    margin-top: 0px;
+    }
+    
+    .par {
+    text-indent: 20px;
+    }
+    
+    .date {
+    font-size: 10px;
+    font-weight: 10;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    }
+
+    /*sidebar*/
+    .sidebar { 
+    grid-area: 5 / 11 / 19 / 13;
+    margin-left: 1100px;
+    margin-top:-900px;
+    }
+
+    .shanepic{
+    margin-left: 35px;
+   
+    }
+    .abouttitle {
+    display: flex;
+    justify-content: center;
+    font-family: 'raleway';
+    font-weight: 100;
+    margin-bottom: 200px;
+    position: relative;
+    }
+
+    .aboutpar {
+    display: flex;
+    text-align: center;
+    font-family: 'raleway';
+    position: relative;
+    font-size: 10px;
+    margin-top: -200px;
+    }
+    /*footer*/
+
+    .footer { 
+    grid-area: 19 / 1 / 21 / 13;
+    font-family: 'raleway';
+    font-size:13px;
+    margin-top: 500px;
+    }
+
+    .socialicon ul {
+    display: flex;
+    justify-content: space-between;
+    margin-left:10px;
+    margin-right:1100px;
+    margin-top: 35px;
+    }
+
+    .socialicon li{
+    display: inline-block;
+    }
+
+    .vl{
+    border-left: 1px solid black;
+    height: 150px;
+    position: absolute;
+    top: 1305px;
+    left: 80%;
+
+    }
+    .subtitle{
+    display:flex;
+    justify-content: center;
+    font-family: 'raleway';
+    color: red;
+    font-weight: 100;
+    margin-top: -110px;
+    margin-left: 1200px;
+    }
+    
+    .subemail{
+    display:flex;
+    justify-content: center;
+    margin-left: 1200px;
+    margin-top: 10px;
+    }
+    
+    .subinput{
+    margin-left:1235px;
+    margin-top: -10px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
