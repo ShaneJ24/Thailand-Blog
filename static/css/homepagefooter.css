@@ -1,0 +1,17 @@
+/* footer */
+.footer {
+    grid-area: ft;
+    font-family: "garamond";
+    font-size: 13px;
+    position: relative;
+    margin-right: -280px;
+}
+
+.socialicon ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.socialicon li {
+    display: inline-block;
+}
